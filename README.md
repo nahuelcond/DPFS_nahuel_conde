@@ -14,3 +14,5 @@
 - **FUARK:** es una marca de ropa argentina destinada al fitness para entrenamientos de fuerza. [LINK](https://www.fuark.com.ar)
 - **+SHARK:** es una marca de ropa deportiva creada por el influencer argentino Tomas Mazza. [LINK](https://www.tiendashark.com.ar)
 - **BalboaFIT:** es una plataforma VOD que ofrece todo tipo de accesorios para los entrenamientos como muñequeras, cinturones, etc... [LINK](https://www.balboafit.com)
+
+## AGILE BOARD: [Link](https://trello.com/b/un7jwIrJ/agile-board)
