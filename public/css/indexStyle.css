@@ -1,0 +1,82 @@
+
+
+/*INDEX*/
+.container-main{
+    display: flex;
+    flex-direction: column;
+
+}
+.container-main .img-home img{
+    width: 100%;
+}
+.container-main h4{
+    padding: 15px 0px 0px 10px;
+    font-weight: 300;
+    font-size: 3vw;
+
+}
+.container-main .container-carrousel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+
+}
+.container-main .container-carrousel img{
+    width: 100px;
+    margin:10px;
+    
+}
+
+
+.container-main .container-advice{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 10px;
+    width: 100vw;
+    height: 50vw;
+    margin: 10px 0 10px 0;
+    background: url(/public/img/home-advice.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container-main .background-img{
+    background: url(/public/img/home-advice-2.jpeg);
+    background-size: cover;
+    background-position: top;
+}
+.container-advice .container-letter{
+    background-color: transparent;
+    padding: 10px;
+    width: 45vw;
+    overflow: hidden;
+}
+.container-advice .container-letter h5{
+    font-size: 5vw;
+    background-color: transparent;
+    padding-bottom: 10px;
+   
+}
+.container-advice .container-letter p{
+    background-color: transparent;
+    padding-bottom: 15px;
+    font-size: 2vw;
+}
+.container-advice button{
+    font-size: 1.5vw;
+    width: 50%;
+    text-align: center;
+    width: 15vw;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--letter-color);
+    color: var(--letter-black-color);
+}
+
+
+

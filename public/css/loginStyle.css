@@ -1,0 +1,98 @@
+
+
+/*LOGO*/
+.log-in-logo {
+    text-align: center;
+}
+.logo {
+    max-width: 10em;
+}
+
+
+/*FORM*/
+.form-login {
+    display: flex;
+    flex-direction: column;
+    
+}
+.form-login input {
+    margin: 10px;
+    border-color: var(--letter-color-opacity);
+    background-color: var(--background-color);
+    border-style: double;
+    border-radius: 10px;
+    color: var(--letter-color);
+    padding: 10px;
+}
+.form-login p {
+    text-align: center;
+    color: var(--letter-color);
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.form-login a:hover {
+    color: var(--letter-color-opacity);
+    
+}
+.form-login label{
+    color: var(--letter-color-opacity); 
+    padding: 10px;
+
+}
+.form-login .log-in {
+    background-color: var(--logo-color);
+    color: var(--letter-black-color);
+    border: var(--background-color);
+    font-family: "Roboto";
+    font-weight: 500;
+    height: 45px;
+}
+.form-login .log-in:hover {
+    background-color: var(--logo-color-opacity);
+    cursor: pointer;
+}
+.form-login .remember-option {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.form-login .remember-option input {
+    margin: 0;
+}
+.form-login .remember-option label {
+    color: var(--letter-color);
+}
+
+
+
+.background-image {
+    display: none;
+}
+
+/*MEDIA QUERYS*/
+@media screen and (min-width: 1025px ) {
+    .background-image{
+        display: flex;
+        width: 50vw;
+        height: 100dvh;
+        
+    }
+    .background-image img {
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+
+    }
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .form-login {
+    width: 30em;;
+    }
+
+}
