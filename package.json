@@ -1,0 +1,19 @@
+{
+  "name": "dpfs_nahuel_conde",
+  "version": "1.0.0",
+  "description": "> Este es un proyecto de un E-COMMERCE, su principal objetivo es la venta de ropa destinada para entrenamientos de fuerza y/o hipertrofia en distintas disciplinas como BodyBuilding, CrossFit, Powerlifting, etc.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
