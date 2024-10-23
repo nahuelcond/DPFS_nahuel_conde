@@ -1,0 +1,101 @@
+    <%- include('../partials/head', { title: ' Product Detail', css: '/css/productDetailStyle.css'
+    }) %>
+
+    <%- include('../partials/header') %>
+
+    <section class="container-main">
+        <section class="container-product">
+            <div class="container-img-carrousel">
+                <img src="/img/remera-prueba.jpg" alt="">
+            </div>
+            <div class="container-product-details">
+
+                <div class="container-title">
+                    <h1 class="product-title">APEX CONTRAST SHORT</h1>
+                    <h3 class="product-price">US$30</h3>
+                </div>
+                <form action="" class="container-form">
+                    <div class="container-sizes">
+                        <label>TALLES</label>
+                        <div class="sizes">
+                            <div class="container-option  size-xs">
+                                <input type="radio" id="size-xs" name="size" value="xs">
+                                <label for="size-xs"></label>
+                            </div>
+                            <div class="container-option size-s">
+                                <input type="radio" id="size-s" name="size" value="s">
+                                <label for="size-s"></label>
+                            </div>
+                            <div class="container-option size-m">
+                                <input type="radio" id="size-m" name="size" value="m">
+                                <label for="size-m"></label>
+                            </div>
+                            <div class="container-option size-l">
+                                <input type="radio" id="size-l" name="size" value="l">
+                                <label for="size-l"></label>
+                            </div>
+                            <div class="container-option size-xl">
+                                <input type="radio" id="size-xl" name="size" value="xl">
+                                <label for="size-xl"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-colors">
+
+                        <label for="colours">COLORES</label>
+                        <div class="colours">
+                            <div class="container-option-color colour-black">
+                                <input type="radio" id="black" name="colour" value="negro">
+                                <label for="black"></label>
+                            </div>
+                            <div class="container-option-color colour-yellow">
+                                <input type="radio" id="yellow" name="colour" value="amarillo">
+                                <label for="yellow"></label>
+                            </div>
+                            <div class="container-option-color colour-pink">
+                                <input type="radio" id="pink" name="colour" value="rosa">
+                                <label for="pink"></label>
+                            </div>
+                            <div class="container-option-color colour-red">
+                                <input type="radio" name="colour" value="rojo" id="red">
+                                <label for="red"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-buy">ADD TO BAG</button>
+
+                </form>
+                <div class="container-description">
+                    <div class="title-description ">
+                        <h4>DESCRIPCION</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="text-description hidden">
+                        <p>-------------</p>
+                    </div>
+                </div>
+                <div class="container-additional-info">
+                    <div class="title-additional">
+                        <h4>INFO ADICIONAL</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="text-additional hidden">
+                        <p>-------------</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-similars">
+            <h4>SIMILARES</h4>
+
+            <%- include('../partials/carrousel') %>
+           
+        </section>
+    </section>
+    <%- include('../partials/footer') %>
+    <script src="https://kit.fontawesome.com/6e8142624e.js" crossorigin="anonymous"></script>
+    <script src="/javascripts/productDetail.js"></script>
+    <script src="/javascripts/index.js"></script>
+</body>
+
+</html>

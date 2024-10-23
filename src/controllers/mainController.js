@@ -3,16 +3,16 @@ const path = require('path');
 
 const controller = {
     index: (req, res) => {
-        res.render('index');
+        res.render('products/index');
     },
     login: (req, res) => {
-        res.render('login');
+        res.render('users/login');
     },
     product: (req, res) => {
-        res.render('productDetail');
+        res.render('products/productDetail');
     },
     register: (req, res) => {
-        res.render('register');
+        res.render('users/register');
     }
 };
 
