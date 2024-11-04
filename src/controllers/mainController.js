@@ -13,6 +13,15 @@ const controller = {
     },
     register: (req, res) => {
         res.render('users/register');
+    },
+    shopping: (req, res) => {
+        res.render('products/shoppingCart');
+    },
+    create: (req, res) => {
+        res.render('products/productCreation');
+    },
+    galery: (req, res) => {
+        res.render('products/productGalery');
     }
 };
 

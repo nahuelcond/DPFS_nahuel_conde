@@ -8,19 +8,26 @@
             <diV class="log-in-logo">
                 <a href=""><img class="logo" alt="" src="/img/logo-1.png" /></a>
             </diV>
+            <label for="first-name">Nombre/s:</label>
+            <input type="text" name="" id="first-name" placeholder="Ingresa tu nombre" required>
+            <label for="last-name">Apellido/s:</label>
+            <input type="text" name="" id="last-name" placeholder="Ingresa tu apellido" required>
+            <label for="date-birth">Fecha de nacimiento:</label>
+            <input class="date" type="date" name="" id="date-birth" required>
             <label for="email-adress">Correo electronico:</label>
-            <input id="email-adress" type="email" placeholder="Ingresa tu correo electronico" required />
-            <label for="password-login">Contraseña:</label>
-            <input id="password-login" type="password" placeholder="Ingresa tu contraseña" required />
-            <div class="remember-option">
-                <input type="checkbox" name="" id="remember-option">
-                <label for="remember-option">Recuerdame</label>
+            <input type="text" name="" id="email-adress" placeholder="Ingresa tu correo electronico" required>
+            <div class="container-password">
+                <label for="password-register">Contraseña:</label>
+                <span id="hide-btn">Mostrar</span>
             </div>
-            <input class="log-in" type="submit" value="LOG IN">
-            <p>¿No tienes cuenta? <a href="">Registrate</a></p>
+            <input type="password" name="" id="password-register" placeholder="Ingresa tu contraseña" required>
+            <input class="sign-up" type="submit" value="SIGN UP">
+            <p>¿Ya tienes cuenta? <a href="">Login</a></p>
         </form>
         <div></div>
     </section>
+    <script src="/javascripts/register.js"></script>
+
 </body>
 
 </html>

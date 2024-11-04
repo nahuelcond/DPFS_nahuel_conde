@@ -1,13 +1,8 @@
 //CONST
-const shoppingCartIcon = document.querySelector('#shopping-cart');
-const toggleShoppingCart = document.querySelector('#toggle-shopping-cart');
+
 
 const menuBarsIcon = document.querySelector('#container-menu-bars-icon');
 const toggleMenuBars = document.querySelector('#container-menu-bars')
-
-shoppingCartIcon.addEventListener('click',()=>{
-    toggleShoppingCart.classList.toggle('hidden')
-});
 
 menuBarsIcon.addEventListener('click',()=>{
     toggleMenuBars.classList.toggle('hidden')

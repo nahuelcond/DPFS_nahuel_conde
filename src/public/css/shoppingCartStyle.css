@@ -1,0 +1,112 @@
+.shopping-cart{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.shopping-cart h2{
+    margin-bottom: 1.5em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+.shopping-cart .container-products{
+    background-color: var(--footer-color);
+    padding: 0.5em;
+}
+
+.shopping-cart-product {
+    display: flex;
+    flex-direction: row;
+   justify-content: space-around;
+   width: 100%;
+   margin: 2em;
+   
+}
+.shopping-cart-product img {
+    max-width: 10vw;
+}
+
+.shopping-cart-product-process{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    
+
+}
+.shopping-cart button{
+    background-color: var(--logo-color);
+    color: var(--letter-black-color);
+    border: var(--background-color);
+    font-family: "Roboto";
+    font-weight: 500;
+    height: 45px;
+    max-width: 40vw;
+    width: 100%;
+    margin-top: 2em;
+}
+.shopping-cart button:hover{
+    cursor: pointer;
+    background-color: var(--logo-color-opacity);
+}
+.shopping-cart-product-process .container-summary{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.container-total{
+    display: flex;
+    flex-direction: column;
+
+}
+.form-shopping-cart{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+
+@media screen and (min-width: 1024px ) {
+    .shopping-cart-product {
+        display: flex;
+        
+        flex-direction: row;
+       justify-content: space-around;
+       width: 100%;
+       margin-bottom: 2em;
+    }
+    .shopping-cart-product img {
+        max-width: 10vw;
+    }
+    
+    .shopping-cart-product-process{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+        
+    
+    }
+    .shopping-cart-on button{
+        background-color: var(--logo-color);
+        color: var(--letter-black-color);
+        border: var(--background-color);
+        font-family: "Roboto";
+        font-weight: 500;
+        height: 45px;
+        width: 50vw;
+    }
+    .shopping-cart-product-process .container-summary{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+    .container-total{
+        display: flex;
+        flex-direction: column;
+    
+    }
+}

@@ -1,0 +1,55 @@
+<%- include('../partials/head', { title: ' New Product', css: '/css/createStyle.css'
+}) %>
+
+<%- include('../partials/header') %>
+
+<section class="main-container">
+    <form action="" method="" class="create-form">
+        <div     class="form-label" >
+            <label for="product-name">Nombre:</label>
+            <input type="text" name="" id="product-name" placeholder="Ingresa el nombre" required>
+        </div>
+        <div    class="form-label">
+            <label for="product-description">Descripcion:</label>
+            <input type="text" name="" id="product-description" placeholder="Ingresa la descripcion " required>
+        </div>
+        <div    class="form-label">
+
+            <label for="product-image">Imagen:</label>
+            <input  type="file" name="" id="product-image" required>
+        </div>
+        <div   class="form-label">
+            <label for="product-category">Categoria:</label>
+            <select name="" id="product-category">
+                <option value="">Elige una categoria</option>
+                <option value="men">Hombre</option>
+                <option value="women">Mujer</option>
+                <option value="accesories">Accesorio</option>
+            </select>
+        </div  class="form-label">
+        <label>COLORES:</label>
+            <div class="product-colours">
+                <input  type="checkbox" name="" id="product-colour-blue" required>
+                <label for="product-colour-blue">Azul</label>
+                <input  type="checkbox" name="" id="product-colour-red" required>
+                <label for="product-colour-red">Rojo</label>
+                <input  type="checkbox" name="" id="product-colour-yellow" required>
+                <label for="product-colour-yellow">Amarillo</label>
+                <input  type="checkbox" name="" id="product-colour-black" required>           
+                <label for="product-colour-black">Negro</label>
+            </div>
+        <div class="form-label">
+            <label for="product-price">Precio:</label>
+            <input type="text" name="" id="product-price" placeholder="Ingresa el precio " required>
+        </div>
+        <input type="submit" value="FINALIZAR">
+    </form>
+    <img  class="form-img" src="/img/form-img.jpeg" alt="">
+</section>
+<%- include('../partials/footer') %>
+<script src="https://kit.fontawesome.com/6e8142624e.js" crossorigin="anonymous"></script>
+<script src="/javascripts/index.js"></script>
+
+</body>
+
+</html>

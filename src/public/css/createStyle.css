@@ -1,0 +1,74 @@
+.create-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.void-logo img {
+    width: 20vh;
+}
+
+.create-form .form-label{
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-form input {
+    margin: 10px;
+    border-color: var(--letter-color-opacity);
+    background-color: var(--background-color);
+    border-style: double;
+    border-radius: 10px;
+    color: var(--letter-color);
+    padding: 10px;
+    
+}
+.create-form select{
+    margin: 10px;
+    border-color: var(--letter-color-opacity);
+    background-color: var(--background-color);
+    border-style: double;
+    border-radius: 10px;
+    color: var(--letter-color);
+    padding: 10px;
+}
+
+.create-form label{
+    color: var(--letter-color-opacity); 
+    padding: 10px;
+
+}
+
+.create-form .product-colours{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.form-img{
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px ) { 
+    .create-form {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .create-form .form-label{
+        margin-bottom: 1.5em;
+        display: block;
+    }
+    .form-img{
+        display: inline;
+        max-width: 50vw;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+}
