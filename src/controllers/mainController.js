@@ -1,18 +1,15 @@
-const { register } = require('module');
+
 const path = require('path');
 
+const ProductModel = require('../models/product');
+
 const controller = {
-    index: (req, res) => {
+    index : (req, res) => {
+        const products = ProductModel.findAll();
         res.render('products/index');
-    },
-    login: (req, res) => {
-        res.render('users/login');
     },
     product: (req, res) => {
         res.render('products/productDetail');
-    },
-    register: (req, res) => {
-        res.render('users/register');
     },
     shopping: (req, res) => {
         res.render('products/shoppingCart');

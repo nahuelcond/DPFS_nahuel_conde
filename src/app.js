@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 
 const mainRouter = require('./routes/main')
+const usersRouter = require('./routes/users')
 
 const app = express();
 
@@ -14,6 +15,7 @@ app.use(express.urlencoded({ extended: true})),
 app.use(express.json());
 
 app.use('/', mainRouter)
+app.use('/', usersRouter)
 
 
 
