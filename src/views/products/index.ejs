@@ -7,10 +7,26 @@
         <div class="img-home">
             <img src="/img/home-img.jpg" alt="">
         </div>
+        <div class="title">
+            <h4 id="men">MEN</h4>
+        </div>
 
-        <h4 id="men">MEN</h4>
+        <div class="container-slider">
 
-        <%- include('../partials/carrousel') %>
+            <div class="container-carousel">
+                <div class="carousels" id="slider">
+                    <% locals.productsMen?.forEach(item => { %>
+                            <section class="slider-section">
+                                <img src="<%= item.image %>" alt="">
+                            </section>
+
+                    <%    }); %>
+                </div>
+                <i class="fa-solid fa-arrow-left btn-left"></i>
+                <i class="fa-solid fa-arrow-right btn-right"></i>
+            </div>
+        </div>
+     
         
         <div class="container-advice">
             <div class="container-letter">
@@ -21,10 +37,26 @@
             </div>
 
         </div>
+        <div class="title">
+            <h4 id="women">WOMEN</h4>
+        </div>
 
-        <h4 id="women">WOMEN</h4>
+        <div class="container-slider">
 
-        <%- include('../partials/carrousel') %>
+            <div class="container-carousel">
+                <div class="carousels" id="slider1">
+                    <% locals.productsWomen?.forEach(item => { %>
+                            <section class="slider-section">
+                                <img src="<%= item.image %>" alt="">
+                            </section>
+
+                        
+                    <%    }); %>
+                </div>
+                <i class="fa-solid fa-arrow-left btn-left  btn-left1"></i>
+                <i class="fa-solid fa-arrow-right btn-right  btn-right1"></i>
+            </div>
+        </div>
 
         <div class="container-advice background-img">
             <div class="container-letter">
@@ -34,10 +66,14 @@
             </div>
         </div>
         </div>
-        <h4 id="accessories">ACCESORIOS</h4>
 
-        <%- include('../partials/carrousel') %>
-       
+        <div class="title">
+            <h4 id="accessories">ACCESORIOS</h4>
+        </div>
+
+         <%- include('../partials/carrousel', { btn1: 'btn-left2', btn2: 'btn-right2', id:'slider2'
+        }) %>
+        
         </div>
     </section>
     <%- include('../partials/footer') %>

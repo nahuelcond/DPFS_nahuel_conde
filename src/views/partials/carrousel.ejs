@@ -1,5 +1,16 @@
-<div class="container-carrousel">
-    <img src="/img/remera-prueba.jpg" alt="">
-    <img src="/img/remera-prueba.jpg" alt="">
-    <img src="/img/remera-prueba.jpg" alt="">
+<div class="container-slider">
+
+    <div class="container-carousel">
+        <div class="carousels" id="<%= locals.id? id : '' %>">
+            <% locals.productsAcs?.forEach(item => { %>
+                <section class="slider-section">
+                    <img src="<%= item.image %>" alt="">
+                </section>
+
+            
+        <%    }); %>
+        </div>
+        <i class="fa-solid fa-arrow-left btn-left  <%= locals.btn1 ? btn1 : '' %>"></i>
+        <i class="fa-solid fa-arrow-right btn-right  <%= locals.btn1 ? btn2 : '' %>"></i>
+    </div>
 </div>

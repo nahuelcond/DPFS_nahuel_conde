@@ -45,6 +45,12 @@ img{
     cursor: pointer;
 }
 
+.item .info-product h2 {
+    font-size: 10px;
+    text-align: center;
+    max-width: 80%;
+}
+
 @media screen and (min-width: 1024px ) {
     .container-items{
         display: grid;
@@ -56,4 +62,9 @@ img{
         max-width: 100%;
         width: 100%;
     }
+    .item .info-product h2 {
+        font-size: 15px;
+       
+    }
+    
 }

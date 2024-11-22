@@ -6,10 +6,14 @@ const ProductModel = require('../models/product');
 const controller = {
     index : (req, res) => {
         const products = ProductModel.findAll();
-        res.render('products/index');
+        const productsMen = ProductModel.findByCategory("hombre");
+        const productsWomen = ProductModel.findByCategory("mujer");
+        const productsAcs = ProductModel.findByCategory("accesorio");
+        res.render('products/index', {  productsMen, productsWomen, productsAcs });
     },
     product: (req, res) => {
-        res.render('products/productDetail');
+        const productsAcs = ProductModel.findByCategory("accesorio");
+        res.render('products/productDetail', {productsAcs});
     },
     shopping: (req, res) => {
         res.render('products/shoppingCart');
@@ -18,7 +22,8 @@ const controller = {
         res.render('products/productCreation');
     },
     galery: (req, res) => {
-        res.render('products/productGalery');
+        const products = ProductModel.findAll();
+        res.render('products/productGalery', {products});
     }
 };
 

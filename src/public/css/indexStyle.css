@@ -4,6 +4,7 @@
 .container-main{
     display: flex;
     flex-direction: column;
+    
 
 }
 .container-main .img-home img{
@@ -14,19 +15,6 @@
     font-weight: 300;
     font-size: 3vw;
 
-}
-.container-main .container-carrousel{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-
-}
-.container-main .container-carrousel img{
-    width: 100px;
-    margin:10px;
-    
 }
 
 

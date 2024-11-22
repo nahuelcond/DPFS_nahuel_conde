@@ -4,166 +4,19 @@
 <%- include('../partials/header') %>
 
 <section class="container-items">
-    <div class="item">
-        <figure class="img-product">
-            <img src="/img/remera-prueba.jpg" alt="">
-        </figure>
-        <div class="info-product">
-            <h2>PRODUCTO</h2>
-            <p class="price-product">$20</p>
-            <button>Añadir al carrito</button>
+    <% locals.products?.forEach(item => { %>
+        <div class="item">
+            <figure class="img-product">
+                <img src="<%= item.image %>" alt="">
+            </figure>
+            <div class="info-product">
+                <h2><%= item.name %></h2>
+                <p class="price-product"><%= item.price %></p>
+                <button>Añadir al carrito</button>
+            </div>
         </div>
-    </div>
-    <div class="item">
-        <figure class="img-product">
-            <img src="/img/remera-prueba.jpg" alt="">
-        </figure>
-        <div class="info-product">
-            <h2>PRODUCTO</h2>
-            <p class="price-product">$20</p>
-            <button>Añadir al carrito</button>
-        </div>
-    </div>
-    <div class="item">
-        <figure class="img-product">
-            <img src="/img/remera-prueba.jpg" alt="">
-        </figure>
-        <div class="info-product">
-            <h2>PRODUCTO</h2>
-            <p class="price-product">$20</p>
-            <button>Añadir al carrito</button>
-        </div>
-    </div>
-    <div class="item">
-        <figure class="img-product">
-            <img src="/img/remera-prueba.jpg" alt="">
-        </figure>
-        <div class="info-product">
-            <h2>PRODUCTO</h2>
-            <p class="price-product">$20</p>
-            <button>Añadir al carrito</button>
-        </div>
-    </div>
-    <div class="item">
-        <figure class="img-product">
-            <img src="/img/remera-prueba.jpg" alt="">
-        </figure>
-        <div class="info-product">
-            <h2>PRODUCTO</h2>
-            <p class="price-product">$20</p>
-            <button>Añadir al carrito</button>
-        </div>
-    </div>
-    <div class="item">
-        <figure class="img-product">
-            <img src="/img/remera-prueba.jpg" alt="">
-        </figure>
-        <div class="info-product">
-            <h2>PRODUCTO</h2>
-            <p class="price-product">$20</p>
-            <button>Añadir al carrito</button>
-        </div>
-    </div>
-    <div class="item">
-        <figure class="img-product">
-            <img src="/img/remera-prueba.jpg" alt="">
-        </figure>
-        <div class="info-product">
-            <h2>PRODUCTO</h2>
-            <p class="price-product">$20</p>
-            <button>Añadir al carrito</button>
-        </div>
-    </div>
-    <div class="item">
-        <figure class="img-product">
-            <img src="/img/remera-prueba.jpg" alt="">
-        </figure>
-        <div class="info-product">
-            <h2>PRODUCTO</h2>
-            <p class="price-product">$20</p>
-            <button>Añadir al carrito</button>
-        </div>
-    </div>
-    <div class="item">
-        <figure class="img-product">
-            <img src="/img/remera-prueba.jpg" alt="">
-        </figure>
-        <div class="info-product">
-            <h2>PRODUCTO</h2>
-            <p class="price-product">$20</p>
-            <button>Añadir al carrito</button>
-        </div>
-    </div>
-    <div class="item">
-        <figure class="img-product">
-            <img src="/img/remera-prueba.jpg" alt="">
-        </figure>
-        <div class="info-product">
-            <h2>PRODUCTO</h2>
-            <p class="price-product">$20</p>
-            <button>Añadir al carrito</button>
-        </div>
-    </div>
-    <div class="item">
-        <figure class="img-product">
-            <img src="/img/remera-prueba.jpg" alt="">
-        </figure>
-        <div class="info-product">
-            <h2>PRODUCTO</h2>
-            <p class="price-product">$20</p>
-            <button>Añadir al carrito</button>
-        </div>
-    </div>
-    <div class="item">
-        <figure class="img-product">
-            <img src="/img/remera-prueba.jpg" alt="">
-        </figure>
-        <div class="info-product">
-            <h2>PRODUCTO</h2>
-            <p class="price-product">$20</p>
-            <button>Añadir al carrito</button>
-        </div>
-    </div>
-    <div class="item">
-        <figure class="img-product">
-            <img src="/img/remera-prueba.jpg" alt="">
-        </figure>
-        <div class="info-product">
-            <h2>PRODUCTO</h2>
-            <p class="price-product">$20</p>
-            <button>Añadir al carrito</button>
-        </div>
-    </div>
-    <div class="item">
-        <figure class="img-product">
-            <img src="/img/remera-prueba.jpg" alt="">
-        </figure>
-        <div class="info-product">
-            <h2>PRODUCTO</h2>
-            <p class="price-product">$20</p>
-            <button>Añadir al carrito</button>
-        </div>
-    </div>
-    <div class="item">
-        <figure class="img-product">
-            <img src="/img/remera-prueba.jpg" alt="">
-        </figure>
-        <div class="info-product">
-            <h2>PRODUCTO</h2>
-            <p class="price-product">$20</p>
-            <button>Añadir al carrito</button>
-        </div>
-    </div>
-    <div class="item">
-        <figure class="img-product">
-            <img src="/img/remera-prueba.jpg" alt="">
-        </figure>
-        <div class="info-product">
-            <h2>PRODUCTO</h2>
-            <p class="price-product">$20</p>
-            <button>Añadir al carrito</button>
-        </div>
-    </div>
+    <%    }); %>
+
 </section>
 
 

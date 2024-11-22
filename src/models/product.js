@@ -15,6 +15,17 @@ const Product = {
     findById(id) {
         const products = getData();
         return products.find(product => product.id === Number(id));
+    },
+    findByCategory(category) {
+        const products = getData();
+        const productsMen = [];
+        products.forEach(item => {
+            if (item.category === category) {
+                productsMen.push(item)
+            }
+        })
+
+        return productsMen;
     }
 }
 

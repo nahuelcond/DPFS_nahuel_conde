@@ -3,7 +3,7 @@
       "id": 1,
       "name": "Top Pro Dri-FIT",
       "description": "Camiseta de manga larga transpirable y que absorbe el sudor.",
-      "image": "https://example.com/pro-dri-fit-top.jpg",
+      "image": "/img/imagenesJSON/1.png",
       "category": "mujer",
       "colour": "azul",
       "price": 35.99
@@ -12,7 +12,7 @@
       "id": 2,
       "name": "Shorts Flex de Entrenamiento",
       "description": "Shorts ligeros y flexibles para un movimiento óptimo.",
-      "image": "https://example.com/flex-training-shorts.jpg",
+      "image": "/img/imagenesJSON/2.png",
       "category": "hombre",
       "colour": "negro",
       "price": 29.99
@@ -21,16 +21,16 @@
       "id": 3,
       "name": "Zapatillas Air Max de Entrenamiento",
       "description": "Zapatillas de apoyo y estilo para sesiones de gimnasio.",
-      "image": "https://example.com/air-max-training-shoes.jpg",
+      "image": "/img/imagenesJSON/3.png",
       "category": "hombre",
       "colour": "rojo",
       "price": 89.99
     },
     {
       "id": 4,
-      "name": "Sujeción Deportiva Swoosh",
+      "name": "Sujetador Deportivo Swoosh",
       "description": "Sujetador deportivo de soporte medio para entrenamientos.",
-      "image": "https://example.com/swoosh-sports-bra.jpg",
+      "image": "/img/imagenesJSON/4.png",
       "category": "mujer",
       "colour": "amarillo",
       "price": 24.99
@@ -39,7 +39,7 @@
       "id": 5,
       "name": "Set de Bandas de Resistencia",
       "description": "Juego de bandas para entrenamiento de fuerza y flexibilidad.",
-      "image": "https://example.com/resistance-band-set.jpg",
+      "image": "/img/imagenesJSON/5.png",
       "category": "accesorio",
       "colour": "azul",
       "price": 19.99
@@ -48,7 +48,7 @@
       "id": 6,
       "name": "Guantes de Entrenamiento",
       "description": "Guantes duraderos con agarre para levantamiento de pesas.",
-      "image": "https://example.com/training-gloves.jpg",
+      "image": "/img/imagenesJSON/6.png",
       "category": "accesorio",
       "colour": "negro",
       "price": 14.99
@@ -56,8 +56,8 @@
     {
       "id": 7,
       "name": "Pantalones de Yoga",
-      "description": "Pantalones de yoga de cintura alta con tela flexible.",
-      "image": "https://example.com/yoga-pants.jpg",
+      "description": "Pantalones ajustados y antitranspirables",
+      "image": "/img/imagenesJSON/7.png",
       "category": "mujer",
       "colour": "rojo",
       "price": 49.99
@@ -66,7 +66,7 @@
       "id": 8,
       "name": "Mallas de Compresión",
       "description": "Mallas de compresión para soporte y comodidad.",
-      "image": "https://example.com/compression-tights.jpg",
+      "image": "/img/imagenesJSON/8.jpeg",
       "category": "hombre",
       "colour": "amarillo",
       "price": 39.99
@@ -75,7 +75,7 @@
       "id": 9,
       "name": "Camiseta sin Mangas",
       "description": "Camiseta ligera para entrenamientos de alta intensidad.",
-      "image": "https://example.com/tank-top.jpg",
+      "image": "/img/imagenesJSON/9.jpeg",
       "category": "mujer",
       "colour": "azul",
       "price": 19.99
@@ -84,7 +84,7 @@
       "id": 10,
       "name": "Gorra para Correr",
       "description": "Gorra ajustable con material que absorbe el sudor.",
-      "image": "https://example.com/running-cap.jpg",
+      "image": "/img/imagenesJSON/10.jpeg",
       "category": "accesorio",
       "colour": "negro",
       "price": 14.99
@@ -93,7 +93,7 @@
       "id": 11,
       "name": "Bolso Deportivo",
       "description": "Bolso espacioso para llevar lo esencial al gimnasio.",
-      "image": "https://example.com/gym-duffel-bag.jpg",
+      "image": "/img/imagenesJSON/11.jpeg",
       "category": "accesorio",
       "colour": "rojo",
       "price": 49.99
@@ -102,7 +102,7 @@
       "id": 12,
       "name": "Shorts de Malla",
       "description": "Shorts de malla transpirables para máxima ventilación.",
-      "image": "https://example.com/mesh-training-shorts.jpg",
+      "image": "/img/imagenesJSON/12.jpeg",
       "category": "hombre",
       "colour": "amarillo",
       "price": 24.99
@@ -111,16 +111,16 @@
       "id": 13,
       "name": "Sudadera de Rendimiento",
       "description": "Sudadera cómoda para calentar o relajarse después.",
-      "image": "https://example.com/performance-hoodie.jpg",
+      "image": "/img/imagenesJSON/13.jpeg",
       "category": "mujer",
       "colour": "negro",
       "price": 59.99
     },
     {
       "id": 14,
-      "name": "Calcetines de Entrenamiento (3 Pares)",
+      "name": "Calcetines de Entrenamiento ",
       "description": "Calcetines acolchados con soporte para el arco del pie.",
-      "image": "https://example.com/training-socks.jpg",
+      "image": "/img/imagenesJSON/14.jpeg",
       "category": "accesorio",
       "colour": "azul",
       "price": 12.99
@@ -129,7 +129,7 @@
       "id": 15,
       "name": "Leggings de Rendimiento",
       "description": "Leggings flexibles con tecnología que absorbe la humedad.",
-      "image": "https://example.com/performance-leggings.jpg",
+      "image": "/img/imagenesJSON/15.jpeg",
       "category": "mujer",
       "colour": "rojo",
       "price": 39.99
@@ -138,7 +138,7 @@
       "id": 16,
       "name": "Camiseta de Correr Transpirable",
       "description": "Camiseta de manga corta con tela ligera.",
-      "image": "https://example.com/breathable-running-shirt.jpg",
+      "image": "/img/imagenesJSON/16.jpeg",
       "category": "hombre",
       "colour": "azul",
       "price": 29.99
@@ -147,7 +147,7 @@
       "id": 17,
       "name": "Mochila de Entrenamiento",
       "description": "Mochila compacta para equipo de gimnasio y uso diario.",
-      "image": "https://example.com/training-backpack.jpg",
+      "image": "/img/imagenesJSON/17.jpeg",
       "category": "accesorio",
       "colour": "amarillo",
       "price": 34.99
@@ -156,7 +156,7 @@
       "id": 18,
       "name": "Sujetador Deportivo Seamless",
       "description": "Sujetador deportivo suave y sin costuras para mayor comodidad.",
-      "image": "https://example.com/seamless-sports-bra.jpg",
+      "image": "/img/imagenesJSON/18.jpeg",
       "category": "mujer",
       "colour": "azul",
       "price": 29.99
@@ -165,7 +165,7 @@
       "id": 19,
       "name": "Pantalones Jogger de Entrenamiento",
       "description": "Pantalones jogger con ajuste relajado y diseño moderno.",
-      "image": "https://example.com/training-joggers.jpg",
+      "image": "/img/imagenesJSON/19.jpeg",
       "category": "hombre",
       "colour": "negro",
       "price": 44.99
@@ -174,7 +174,7 @@
       "id": 20,
       "name": "Muñequeras de Entrenamiento",
       "description": "Muñequeras de apoyo para levantamiento de pesas.",
-      "image": "https://example.com/wrist-wraps.jpg",
+      "image": "/img/imagenesJSON/20.jpeg",
       "category": "accesorio",
       "colour": "rojo",
       "price": 14.99
