@@ -18,9 +18,6 @@ const controller = {
     shopping: (req, res) => {
         res.render('products/shoppingCart');
     },
-    create: (req, res) => {
-        res.render('products/productCreation');
-    },
     galery: (req, res) => {
         const products = ProductModel.findAll();
         res.render('products/productGalery', {products});

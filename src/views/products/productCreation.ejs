@@ -4,43 +4,44 @@
 <%- include('../partials/header') %>
 
 <section class="main-container">
-    <form action="" method="" class="create-form">
+    <form action="/product/create" method="post" class="create-form" enctype="multipart/form-data">
         <div     class="form-label" >
-            <label for="product-name">Nombre:</label>
-            <input type="text" name="" id="product-name" placeholder="Ingresa el nombre" required>
+            <label for="txtName">Nombre:</label>
+            <input type="text" name="name" id="txtName" placeholder="Ingresa el nombre" required>
         </div>
         <div    class="form-label">
-            <label for="product-description">Descripcion:</label>
-            <input type="text" name="" id="product-description" placeholder="Ingresa la descripcion " required>
+            <label for="txtDescription">Descripcion:</label>
+            <input type="text" name="description" id="txtDescription" placeholder="Ingresa la descripcion " required>
         </div>
         <div    class="form-label">
 
-            <label for="product-image">Imagen:</label>
-            <input  type="file" name="" id="product-image" required>
+            <label for="fileImage">Imagen:</label>
+            <input  type="file" name="image" id="fileImage" accept="image/*" required>
         </div>
         <div   class="form-label">
-            <label for="product-category">Categoria:</label>
-            <select name="" id="product-category">
-                <option value="">Elige una categoria</option>
-                <option value="men">Hombre</option>
-                <option value="women">Mujer</option>
-                <option value="accesories">Accesorio</option>
+            <label for="cmbCategory">Categoria:</label>
+            <select name="category" id="cmbCategory">
+                <option value="">--Seleccione--</option>
+                <% locals.categories?.forEach(item => { %>
+                    <option value="<%- item.name %>"><%- item.name %></option>
+
+            <%    }); %>
             </select>
         </div  class="form-label">
-        <label>COLORES:</label>
-            <div class="product-colours">
-                <input  type="checkbox" name="" id="product-colour-blue" required>
-                <label for="product-colour-blue">Azul</label>
-                <input  type="checkbox" name="" id="product-colour-red" required>
-                <label for="product-colour-red">Rojo</label>
-                <input  type="checkbox" name="" id="product-colour-yellow" required>
-                <label for="product-colour-yellow">Amarillo</label>
-                <input  type="checkbox" name="" id="product-colour-black" required>           
-                <label for="product-colour-black">Negro</label>
-            </div>
+        <div   class="form-label">
+            <label for="cmbColour">Color:</label>
+            <select name="colour" id="cmbColour">
+                <option value="">--Seleccione--</option>
+                <option value="blue">Azul</option>
+                <option value="red">Rojo</option>
+                <option value="yellow">Amarillo</option>
+                <option value="black">Negro</option>
+                
+            </select>
+        </div  class="form-label">
         <div class="form-label">
-            <label for="product-price">Precio:</label>
-            <input type="text" name="" id="product-price" placeholder="Ingresa el precio " required>
+            <label for="txtPrice">Precio:</label>
+            <input type="text" name="price" id="txtPrice" placeholder="Ingresa el precio " required>
         </div>
         <input type="submit" value="FINALIZAR">
     </form>

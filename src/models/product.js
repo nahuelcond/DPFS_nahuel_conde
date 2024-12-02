@@ -1,3 +1,4 @@
+
 const fs = require('fs');
 const path = require('path');
 
@@ -26,6 +27,44 @@ const Product = {
         })
 
         return productsMen;
+    },
+    create(data) {
+        const products = getData();
+        const newProduct = {
+            id: products[products.length - 1].id + 1,
+            name: data.name,
+            description: data.description,
+            image: data.image,
+            category: data.category,
+            colour: data.colour,
+            price: data.price
+
+        };
+        products.push(newProduct);
+        fs.writeFileSync(filePath, JSON.stringify(products, null, 2));
+        return newProduct
+    },
+    update: (id, data) => {
+        const products = getData();
+        const index = products.findIndex(product => product.id === Number(id));
+        products[index] = {
+            id: products[index].id,
+            name: data.name || products[index].name,
+            description: data.description || products[index].description,
+            image: data.image || products[index].image,
+            category: data.category || products[index].category,
+            colour: data.colour || products[index].colour,
+            price: data.price || products[index].price
+        };
+        fs.writeFileSync(filePath, JSON.stringify(products, null, 2))
+        return products[index];
+    },
+    delete: (id) => {
+        const products = getData();
+        const index = products.findIndex(product => product.id === Number(id));
+        products.splice(index, 1);
+        fs.writeFileSync(filePath, JSON.stringify(products, null, 2));
+        return true
     }
 }
 

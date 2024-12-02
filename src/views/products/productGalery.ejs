@@ -7,11 +7,11 @@
     <% locals.products?.forEach(item => { %>
         <div class="item">
             <figure class="img-product">
-                <img src="<%= item.image %>" alt="">
+                <img src="/img/imagenesJSON/<%= item.image %>" alt="">
             </figure>
             <div class="info-product">
                 <h2><%= item.name %></h2>
-                <p class="price-product"><%= item.price %></p>
+                <p class="price-product">$<%= item.price %></p>
                 <button>Añadir al carrito</button>
             </div>
         </div>
