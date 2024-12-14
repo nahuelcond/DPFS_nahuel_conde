@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "name": "Top Pro Dri-FIT",
+    "name": "Top Fit Nike",
     "description": "Camiseta de manga larga transpirable y que absorbe el sudor.",
-    "image": "1.png",
+    "image": "1734203598590.png",
     "category": "mujer",
     "colour": "azul",
     "price": 35.99
@@ -171,12 +171,12 @@
     "price": 44.99
   },
   {
-      "id": 20,
-      "name": "Muñequeras de Entrenamiento",
-      "description": "Muñequeras de apoyo para levantamiento de pesas.",
-      "image": "20.jpeg",
-      "category": "accesorio",
-      "colour": "rojo",
-      "price": 14.99
+    "id": 20,
+    "name": "Muñequeras de Entrenamiento",
+    "description": "Muñequeras de apoyo para levantamiento de pesas.",
+    "image": "20.jpeg",
+    "category": "accesorio",
+    "colour": "rojo",
+    "price": 14.99
   }
 ]

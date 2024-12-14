@@ -1,0 +1,67 @@
+<%- include('../partials/head', { title: ' New Product', css: '/css/createStyle.css'
+}) %>
+
+<%- include('../partials/header') %>
+
+<section class="main-container">
+    <form action="/product/modify/:id" method="post" class="create-form" enctype="multipart/form-data">
+        <div     class="form-label" >
+            <label for="txtId">ID:</label>
+            <input type="text" name="id" id="txtId" value="<%= product.id %>" readonly >
+        </div>
+        <div     class="form-label" >
+            <label for="txtName">Nombre:</label>
+            <input type="text" name="name" id="txtName" placeholder="<%= product.name %>" >
+        </div>
+        <div    class="form-label">
+            <label for="txtDescription">Descripcion:</label>
+            <input type="text" name="description" id="txtDescription" placeholder="<%= product.description %> " >
+        </div>
+        <div    class="form-label">
+
+            <label for="fileImage">Imagen:</label>
+            <div class="img-preview">
+                <img src="/img/imagenesJSON/<%= product.image %>" alt=""> 
+                
+
+            </div>
+            <input  type="file" name="image" id="fileImage" accept="image/*" >
+        </div>
+        <div   class="form-label">
+            <label for="cmbCategory">Categoria:</label>
+            <select name="category" id="cmbCategory">
+                <option value=""><%= product.category %></option>
+                <% locals.categories?.forEach(item => { %>
+                    <option value="<%- item.name %>"><%- item.name %></option>
+
+            <%    }); %>
+            </select>
+        </div  class="form-label">
+        <div   class="form-label">
+            <label for="cmbColour">Color:</label>
+            <select name="colour" id="cmbColour">
+                <option value=""><%= product.colour %></option>
+                <option value="blue">Azul</option>
+                <option value="red">Rojo</option>
+                <option value="yellow">Amarillo</option>
+                <option value="black">Negro</option>
+                
+            </select>
+        </div  class="form-label">
+        <div class="form-label">
+            <label for="txtPrice">Precio:</label>
+            <input type="text" name="price" id="txtPrice" placeholder="<%= product.price %> " >
+        </div>
+        <div class="btn-submit">
+            <input type="submit" value="FINALIZAR">
+        </div>
+    </form>
+    <img  class="form-img" src="/img/form-img.jpeg" alt="">
+</section>
+<%- include('../partials/footer') %>
+<script src="https://kit.fontawesome.com/6e8142624e.js" crossorigin="anonymous"></script>
+<script src="/javascripts/index.js"></script>
+
+</body>
+
+</html>

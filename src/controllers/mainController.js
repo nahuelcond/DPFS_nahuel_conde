@@ -13,7 +13,8 @@ const controller = {
     },
     product: (req, res) => {
         const productsAcs = ProductModel.findByCategory("accesorio");
-        res.render('products/productDetail', {productsAcs});
+        const product= ProductModel.findById(req.params.id)
+        res.render('products/productDetail', {productsAcs, product});
     },
     shopping: (req, res) => {
         res.render('products/shoppingCart');

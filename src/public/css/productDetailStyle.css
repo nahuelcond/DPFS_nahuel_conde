@@ -141,6 +141,13 @@
 
 
 /*DETALLES DEL PRODUCTO*/
+.container-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30em;
+}
+
 .container-description .title-description{
     display: flex;
     flex-direction: row;

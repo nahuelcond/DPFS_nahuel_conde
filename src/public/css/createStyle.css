@@ -12,9 +12,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
 }
 
+.create-form img {
+    max-width: 10em;
+}
+
+
 .create-form input {
+    width: 100%;
     margin: 10px;
     border-color: var(--letter-color-opacity);
     background-color: var(--background-color);
@@ -49,12 +56,20 @@
     display: none;
 }
 
+.create-form .btn-submit input:hover{
+    background-color: var(--logo-color-opacity);
+    color: var(--background-color);
+}
+
 
 @media screen and (min-width: 1024px ) { 
     .create-form {
         display: flex;
         flex-direction: column;
         align-items: baseline;
+    }
+    .create-form .img-preview{
+        margin: 20px;
     }
 
     .create-form .form-label{

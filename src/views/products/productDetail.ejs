@@ -6,13 +6,13 @@
     <section class="container-main">
         <section class="container-product">
             <div class="container-img-carrousel">
-                <img src="/img/remera-prueba.jpg" alt="">
+                <img src="/img/imagenesJSON/<%= product.image %>" alt="">
             </div>
             <div class="container-product-details">
 
                 <div class="container-title">
-                    <h1 class="product-title">APEX CONTRAST SHORT</h1>
-                    <h3 class="product-price">US$30</h3>
+                    <h1 class="product-title"><%= product.name %></h1>
+                    <h3 class="product-price">$<%= product.price %></h3>
                 </div>
                 <form action="" class="container-form">
                     <div class="container-sizes">
@@ -65,22 +65,25 @@
                     <button type="submit" class="btn-buy">ADD TO BAG</button>
 
                 </form>
-                <div class="container-description">
-                    <div class="title-description ">
-                        <h4>DESCRIPCION</h4>
-                        <i class="fa-solid fa-chevron-down"></i>
+                <div class="container-info">
+                    <div class="container-description">
+                        <div class="title-description ">
+                            <h4>DESCRIPCION</h4>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="text-description hidden">
+                            <p><%= product.description %></p>
+                        </div>
                     </div>
-                    <div class="text-description hidden">
-                        <p>-------------</p>
-                    </div>
-                </div>
-                <div class="container-additional-info">
-                    <div class="title-additional">
-                        <h4>INFO ADICIONAL</h4>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                    <div class="text-additional hidden">
-                        <p>-------------</p>
+
+                    <div class="container-additional-info">
+                        <div class="title-additional">
+                            <h4>INFO ADICIONAL</h4>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="text-additional hidden">
+                            <p>Ropa deportiva diseñada con pasión y fabricada con materiales de la más alta calidad. Inspirada en la naturaleza y el rendimiento, creada para acompañarte en cada desafío.</p>
+                        </div>
                     </div>
                 </div>
             </div>
