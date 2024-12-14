@@ -4,6 +4,7 @@ const productApiController = require('../../controllers/api/productController');
 
 const upload = require('../../middlewares/uploadProductImage');
 const { createProductApiValidations } = require('../../middlewares/productValidator')
+const {authorize}= require('../../middlewares/authMiddleware')
 
 
 const router = express.Router();

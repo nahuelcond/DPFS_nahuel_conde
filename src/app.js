@@ -6,6 +6,8 @@ const mainRouter = require('./routes/main');
 const userRouter = require('./routes/user');
 const productRouter = require('./routes/product');
 const productApiRouter = require('./routes/api/product');
+const authorizationApiRouter = require('./routes/api/authorization');
+const adminValidator = require('./middlewares/adminValidator');
 
 const app = express();
 
@@ -18,8 +20,9 @@ app.use(express.json());
 
 app.use('/', mainRouter)
 app.use('/user', userRouter)
-app.use('/product', productRouter)
+app.use('/product',adminValidator, productRouter)
 
+app.use('/auth', authorizationApiRouter)
 app.use('/api/product', productApiRouter);
 
 const port = process.env.PORT || 3000;

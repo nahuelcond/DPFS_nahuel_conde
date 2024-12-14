@@ -1,5 +1,5 @@
 const hideButton = document.querySelector('#hide-btn');
-const togglePassword = document.querySelector('#password-register');
+const togglePassword = document.querySelector('#password-form');
 
 hideButton.addEventListener('click',()=>{
     if (togglePassword.type == "password"){

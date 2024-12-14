@@ -14,7 +14,7 @@ const controller = {
     product: (req, res) => {
         const productsAcs = ProductModel.findByCategory("accesorio");
         const product= ProductModel.findById(req.params.id)
-        res.render('products/productDetail', {productsAcs, product});
+        res.render('products/productDetail', {product, productsAcs});
     },
     shopping: (req, res) => {
         res.render('products/shoppingCart');

@@ -1,4 +1,25 @@
-//CONST
+fetch('/auth/token')
+    .then(response => response.json())
+    .then(data => {
+        localStorage.setItem('void-token', data.token)
+        fetch('/api/product', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${localStorage.getItem('void-token')}`
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+        })
+        .catch(error => {
+            console.error(error)
+        })
+    })
+    .catch(error=>{
+        console.error(error);   
+    })
 
 
 const menuBarsIcon = document.querySelector('#container-menu-bars-icon');
