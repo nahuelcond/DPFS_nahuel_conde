@@ -10,16 +10,28 @@
             </diV>
             <label for="email-adress">Correo electronico:</label>
             <input id="email-adress" name="email" type="email" placeholder="Ingresa tu correo electronico" required />
+            <% if (locals.errors?.email) { %> 
+                <p class="error-message">
+                <%= errors.email.msg %>
+            </p><% } %>
             <div class="container-password">
                 <label for="password-form">Contraseña:</label>
                 <span id="hide-btn">Mostrar</span>
             </div>
             <input id="password-form" name="password" type="password" placeholder="Ingresa tu contraseña" required />
+            <% if (locals.errors?.password) { %> 
+                <p class="error-message">
+                <%= errors.password.msg %>
+            </p><% } %>
             
             <div class="remember-option">
                 <input type="checkbox" name="" id="remember-option">
                 <label for="remember-option">Recuerdame</label>
             </div>
+            <% if (locals.errors?.credentials) { %> 
+                <p class="error-message">
+                <%= errors.credentials.msg %>
+            </p><% } %>
             <input class="log-in" type="submit" value="LOG IN">
             <p>¿No tienes cuenta? <a href="">Registrate</a></p>
         </form>

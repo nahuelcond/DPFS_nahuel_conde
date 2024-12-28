@@ -13,12 +13,19 @@
                 <li><a href="#accessories" class="header-selector-3">ACCESORIOS</a></li>
             </ul>
         </div>
-
+        
         <div class="container-user">
             <div class="container-heart">
                 <a href=""><i class="fa-solid fa-heart"></i></a>
             </div>
-            <a href=""><i class=" fa-solid fa-user"></i></a>
+            <div class="container-user">
+                <a href=""><i class=" fa-solid fa-user"></i></a>
+                
+                <% if (locals.user) { %>
+                    <h5>Hola, <%= user.name %></h5>
+                    <a href="/user/logout"><button>Cerrar Session</button></a>
+                <% } %>
+            </div>
             <div class="container-shopping-cart">
                 <i class="fa-solid fa-cart-shopping " id="shopping-cart"></i>
             </div>

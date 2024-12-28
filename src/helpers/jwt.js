@@ -11,7 +11,7 @@ function encode(payload) {
 function verify(req) {
   if (req.header && req.headers.authorization) {
     const parts = req.headers.authorization.split(' ')
-    console.log(parts)
+    
     if (parts.length !== 2) {
         throw new Error('Format is Atuhorization: Bearer')
     }
